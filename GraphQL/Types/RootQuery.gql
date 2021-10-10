@@ -1,0 +1,14 @@
+# import Article from "Article.gql"
+# import OrderInput from "../inputs/OrderInput.gql"
+# import ArticleFilterInput from "../inputs/ArticleFilterInput.gql"
+# import PaginatedArticles from "PaginatedArticles.gql"
+
+type RootQuery {
+    articles(order: OrderInput, where: ArticleFilterInput): [Article!]!
+    paginatedArticles(
+        order: OrderInput
+        where: ArticleFilterInput
+        skip: Int!
+        take: Int!
+    ): PaginatedArticles!
+}

@@ -1,0 +1,5 @@
+# import Article from "Article.gql"
+
+type DeleteVariantByIdOutput {
+    parent: Article
+}

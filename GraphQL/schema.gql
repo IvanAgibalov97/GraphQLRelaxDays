@@ -1,0 +1,7 @@
+# import RootMutation from 'Types/RootMutation.gql'
+# import RootQuery from 'Types/RootQuery.gql'
+
+schema {
+    query: RootQuery
+    mutation: RootMutation
+}

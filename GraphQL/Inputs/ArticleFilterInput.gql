@@ -1,0 +1,34 @@
+input ArticleFilterInput {
+    and: [ArticleFilterInput!]
+    or: [ArticleFilterInput!]
+
+    ean: StringOperationFilterInput
+    title: StringOperationFilterInput
+    description: StringOperationFilterInput
+    createdBy: StringOperationFilterInput
+    lastChangedBy: StringOperationFilterInput
+
+    createdAt: ComparableDateOperationFilterInput
+    lastChangedAt: ComparableDateOperationFilterInput
+
+    price: ComparableDecimalOperationFilterInput
+
+    complete: Complete
+}
+input StringOperationFilterInput {
+    eq: String
+    contains: String
+}
+input ComparableDecimalOperationFilterInput {
+    eq: Float
+    gte: Float
+    lte: Float
+}
+input ComparableDateOperationFilterInput {
+    eq: String
+    gte: String
+    lte: String
+}
+input Complete {
+    eq: Boolean!
+}

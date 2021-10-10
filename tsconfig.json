@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "ES5",
+        "module": "commonjs",
+        "lib": ["ES5", "DOM"],
+        "alwaysStrict": true,
+        "strict": true,
+        "allowJs": false,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        //"noUnusedLocals": true,
+        //"noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noImplicitOverride": false,
+        "removeComments": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "declaration": true
+    },
+    "include": ["./src/**/*.ts", "src/main.ts", "./tests/**/*.ts"]
+}

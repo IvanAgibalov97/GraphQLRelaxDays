@@ -1,0 +1,10 @@
+type PageInfo {
+    hasNextPage: Boolean!
+    hasPreviousPage: Boolean!
+}
+
+type PaginatedArticles {
+    items: [Article!]!
+    pageInfo: PageInfo!
+    totalCount: Int!
+}

@@ -1,0 +1,12 @@
+type TranslationArticle {
+    ean: String!
+}
+
+type Translation {
+    language: String!
+    article: TranslationArticle!
+    content: String!
+    createdAt: String!
+    createdBy: String!
+    field: String!
+}

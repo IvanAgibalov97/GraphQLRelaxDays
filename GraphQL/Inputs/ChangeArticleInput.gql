@@ -1,0 +1,6 @@
+input ChangeArticleInput {
+    title: String
+    description: String
+    price: Float
+    ean: String!
+}

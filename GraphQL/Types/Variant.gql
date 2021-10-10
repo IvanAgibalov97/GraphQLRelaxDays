@@ -1,0 +1,8 @@
+type Variant {
+    characteristic: String!
+    variantId: Int!
+    createdBy: String
+    createdAt: String
+    lastChangedAt: String
+    lastChangedBy: String
+}

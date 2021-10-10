@@ -1,0 +1,8 @@
+input Parent {
+    ean: String!
+}
+
+input VariantInput {
+    characteristic: String!
+    parent: Parent
+}

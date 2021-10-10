@@ -1,0 +1,19 @@
+version: "3"
+services:
+    node:
+        image: latest/grahqlagibalov
+        build: .
+        expose: - "8050"
+        enviroment:
+            - PORT=8000
+            - MONGO_URL="mongodb://127.0.0.1:27017"
+            - MONGO_DB="articles"
+        links:
+            - mongo
+    mongo:
+        container_name: mongo
+        image: mongo
+        volumes:
+            - ./data:/data/db
+        ports:
+            - "27017:27017"

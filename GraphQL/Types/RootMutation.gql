@@ -1,0 +1,16 @@
+# import ArticleInput from "../inputs/ArticleInput.gql"
+# import ChangeArticleInput from "../inputs/ChangeArticleInput.gql"
+# import VariantInput from "../inputs/VariantInput.gql"
+# import TranslationInput from "../inputs/TranslationInput.gql"
+# import Translation from "./Translation.gql"
+# import Article from "./Article.gql"
+# import DeleteVariantByIdOutput from "./DeleteVariantByIdOutput.gql"
+
+type RootMutation {
+    addArticle(article: ArticleInput, user: String): Article!
+    addVariant(variant: VariantInput, user: String): Article!
+    changeArticle(article: ChangeArticleInput!, user: String): Article!
+    deleteVariant(variant: VariantInput!, user: String): Article!
+    addTranslation(translation: TranslationInput, user: String): Translation!
+    deleteVariantById(variantId: Int, user: String): DeleteVariantByIdOutput!
+}

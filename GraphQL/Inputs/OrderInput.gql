@@ -1,0 +1,15 @@
+enum sorting {
+    ASC
+    DESC
+}
+
+input OrderInput {
+    title: sorting
+    price: sorting
+    description: sorting
+    ean: sorting
+    createdBy: sorting
+    createdAt: sorting
+    lastChangedBy: sorting
+    lastChangedAt: sorting
+}
